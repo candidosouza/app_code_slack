@@ -10006,3 +10006,47 @@ a:hover, a:focus, a:active {
   grid-template-areas: "SL SN CI SS" "SL CL CD UL" "SL CL CD UL";
   height: 100vh;
 }
+.content .server-list {
+  grid-area: SL;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #202225;
+  padding: 11px 0;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.content .server-list::-webkit-scrollbar {
+  display: none;
+}
+.content .server-list .separator {
+  font-size: 0.95em;
+  font-weight: 400;
+  color: #828386;
+  text-align: center;
+  margin: 5px 0 15px 0;
+}
+.content .server-list .logo {
+  margin-bottom: 20px;
+}
+.content .server-list .group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background-color: #36393f;
+  cursor: pointer;
+}
+.content .server-list .group:hover {
+  border: 1px solid #828386;
+}
+.content .server-list .group.active {
+  border: 1px solid #828386;
+}
+.content .server-list .group.is-user {
+  border: 2px solid #ffcd01;
+}
