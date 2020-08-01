@@ -16,5 +16,16 @@
         'SL CL CD UL'
     ;
     height: 100vh;
+
+
+    .server-list {
+        grid-area: SL;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        background-color: ;
+    }
     
 }
