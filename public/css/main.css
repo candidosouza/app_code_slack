@@ -9998,3 +9998,11 @@ h3 {
 a:hover, a:focus, a:active {
   text-decoration: none;
 }
+
+.content {
+  display: grid;
+  grid-template-columns: 71px 240px auto 390px;
+  grid-template-rows: 46px auto 52px;
+  grid-template-areas: "SL SN CI SS" "SL CL CD UL" "SL CL CD UL";
+  height: 100vh;
+}

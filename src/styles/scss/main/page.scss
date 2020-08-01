@@ -1,0 +1,20 @@
+.content {
+
+    // SL = server list
+    // SN = server name
+    // CI = channel info
+    // SS = server search
+    // CL = channel list
+    // CD = channel data
+    // UL = user list
+    display: grid;
+    grid-template-columns: 71px 240px auto 390px;
+    grid-template-rows: 46px auto 52px;
+    grid-template-areas: 
+        'SL SN CI SS'
+        'SL CL CD UL'
+        'SL CL CD UL'
+    ;
+    height: 100vh;
+    
+}
