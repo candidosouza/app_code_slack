@@ -1,111 +1,115 @@
 .content {
+  // BLG = bar list group
+  // GN = group name
+  // CI = channel info
+  // CL = channel list
+  // CD = channel data
+  // UL = user list
+  display: grid;
+  // grid-template-columns: 71px 240px 1fr 390px;
+  grid-template-columns: 71px 240px auto 390px;
+  grid-template-rows: 46px auto 52px;
+  grid-template-areas:
+    "BLG GN CI CI"
+    "BLG CL CD UL"
+    "BLG CL CD UL";
+  height: 100vh; //view height
 
-    // BLG = bar list group
-    // GN = group name
-    // CI = channel info
-    // CL = channel list
-    // CD = channel data
-    // UL = user list
-    display: grid;
-    // grid-template-columns: 71px 240px 1fr 390px;
-    grid-template-columns: 71px 240px auto 390px;
-    grid-template-rows: 46px auto 52px;
-    grid-template-areas: 
-        'BLG GN CI CI'
-        'BLG CL CD UL'
-        'BLG CL CD UL'
-    ;
-    height: 100vh; //view height
+  .bar-list-group {
+    grid-area: BLG;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .bar-list-group {
-        grid-area: BLG;
+    background-color: $tertiary;
+    padding: 11px 0;
+    max-height: 100vh;
+    overflow-y: scroll;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        background-color: $tertiary;
-        padding: 11px 0;
-        max-height: 100vh;
-        overflow-y: scroll;
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
-
-        .separator {
-            font-size: 0.95em;
-            font-weight: 400;
-            color: $senary;
-            text-align: center;
-            margin: 5px 0 15px 0;
-        }
-
-        .logo {
-            margin-bottom: 20px;
-        }
-
-        .group {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-
-            width: 55px;
-            height: 55px;
-            margin-bottom: 15px;
-            border-radius: 50%;
-
-            background-color: $primary;
-            position: relative;
-
-            font-size: 2em;
-            font-weight: 400;
-            color: $senary;
-
-            &:hover, &.active {
-                border: 1px solid $senary;
-            }
-
-            &.is-user {
-                border: 2px solid $full-cycle;
-
-                &:after {
-                    background-color: $full-cycle;
-                    width: 16px;
-                    height: 16px;
-                    padding: 0 4px;
-                    position: absolute;
-                    bottom: -4px;
-                    right: 0;
-                    border-radius: 50%;
-                    border: 4px solid $primary;
-                    content: '';
-                }
-            }
-
-            .img-group {
-                width: 53px;
-                height: 53px;
-                border-radius: 50%;
-            }
-        }
+    &::-webkit-scrollbar {
+      display: none;
     }
 
-
-    .group-name {
-        grid-area: GN;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        background-color: $secondary;
-        padding: 0 10px;
-
-        font-size: 1em;
-        font-weight: 400;
-        color: $white;
+    .separator {
+      font-size: 0.95em;
+      font-weight: 400;
+      color: $senary;
+      text-align: center;
+      margin: 5px 0 15px 0;
     }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+
+      width: 55px;
+      height: 55px;
+      margin-bottom: 15px;
+      border-radius: 50%;
+
+      background-color: $primary;
+      position: relative;
+
+      font-size: 2em;
+      font-weight: 400;
+      color: $senary;
+
+      &:hover,
+      &.active {
+        border: 1px solid $senary;
+      }
+
+      &.is-user {
+        border: 2px solid $full-cycle;
+
+        &:after {
+          background-color: $full-cycle;
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          bottom: -4px;
+          right: 0;
+          border-radius: 50%;
+          border: 2px solid $primary;
+          content: "";
+        }
+      }
+
+      .img-group {
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .group-name {
+    grid-area: GN;
+
+    background-color: $secondary;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .dropdown-settings {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 100%;
+
+      font-size: 1em;
+      font-weight: 400;
+      color: $white;
+    }
+  }
 }
