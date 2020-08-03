@@ -160,8 +160,8 @@ eval("// removed by extract-text-webpack-plugin//# sourceURL=[module]\n//# sourc
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/candido/work/code-slak/src/scripts/main.js */"./src/scripts/main.js");
-module.exports = __webpack_require__(/*! /home/candido/work/code-slak/src/styles/scss/main.scss */"./src/styles/scss/main.scss");
+__webpack_require__(/*! /home/candido/work/code-slack/src/scripts/main.js */"./src/scripts/main.js");
+module.exports = __webpack_require__(/*! /home/candido/work/code-slack/src/styles/scss/main.scss */"./src/styles/scss/main.scss");
 
 
 /***/ })

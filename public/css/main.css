@@ -10039,14 +10039,23 @@ a:hover, a:focus, a:active {
   margin-bottom: 15px;
   border-radius: 50%;
   background-color: #36393f;
-  cursor: pointer;
+  position: relative;
 }
-.content .server-list .group:hover {
-  border: 1px solid #828386;
-}
-.content .server-list .group.active {
+.content .server-list .group:hover, .content .server-list .group.active {
   border: 1px solid #828386;
 }
 .content .server-list .group.is-user {
   border: 2px solid #ffcd01;
+}
+.content .server-list .group.is-user:after {
+  background-color: #ffcd01;
+  width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  border-radius: 50%;
+  border: 4px solid #36393f;
+  content: "";
 }
