@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="theme-color" content="#000000" />
 
     <title>Code Slack</title>
-    <meta name="description" content="Code Slack"/>
+    <meta name="description" content="Code Slack" />
 
-    <link rel="shortcut icon" href="img/favicon.ico"/>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,500,600,700' rel='preload' as="style" onload="this.rel='stylesheet'" type='text/css'>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,500,600,700"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+      type="text/css"
+    />
     <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
 
-    <script src="https://kit.fontawesome.com/b02699d8eb.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/b02699d8eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="content">
+      <div class="bar-list-group">
+        <img src="./img/logo.png" alt="Logo Code Slack" class="logo" />
 
-        <div class="bar-list-group">
-            <img src="./img/logo.png" alt="Logo Code Slack" class="logo">
-            <a href="" title="" class="group is-user">
-                <img src="./img/huguinho.png" alt="Logo Code Slack" class="img-group">
-            </a>
-            <div class="separator">Grupos</div>
-            <a href="" title="" class="group active">C</a>
-            <a href="" title="" class="group">O</a>
-            <a href="" title="" class="group">D</a>
-            <a href="" title="" class="group">E</a>
-            <a href="" title="" class="group add">+</a>
-        </div>
+          <a href="" title="" class="dropdown-toggle group is-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="./img/huguinho.png" alt="Logo Code Slack" class="img-group"/>
 
-
-        <div class="dropdown group-name">
-            <a class="dropdown-settings" href="#" role="button" id="dropdownSettingsGroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Grupo FullCycle
-                <span class="fa fa-chevron-down"></span>
-            </a>
-          
-            <div class="dropdown-menu" aria-labelledby="dropdownSettingsGroup">
-              <a class="dropdown-item" href="#">Editar grupo <span class="fa fa-edit"></span></a>
-              <a class="dropdown-item" href="#">Criar Canal <span class="fas fa-hashtag"></span></a>
-              <a class="dropdown-item" href="#">Criar categoria <span class="fas fa-folder-plus"></span></a>
-              <a class="dropdown-item" href="#">Url de convite <span class="fas fa-user"></span></a>
-            </div>
+            <!-- <span class="fas fa-circle"></span> -->
+            <!-- <span class="fas fa-circle-notch"></span> -->
+            <span class="fas fa-minus-circle"></span>
+            <!-- <span class="fas fa-dot-circle"></span> -->
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#"><span class="fas fa-circle"></span> Disponível</a>
+            <a class="dropdown-item" href="#"><span class="fas fa-circle-notch"></span> Ausente</a>
+            <a class="dropdown-item" href="#"><span class="fas fa-minus-circle"></span> Não pertubar</a>
+            <a class="dropdown-item" href="#"><span class="fas fa-dot-circle"></span> Invisivel</a>
+            <a class="dropdown-item" href="#"><span class="fas fa-sign-out-alt"></span> Sair</a>
           </div>
 
+        <div class="separator">Grupos</div>
+        <a href="" title="" class="group active">C</a>
+        <a href="" title="" class="group">O</a>
+        <a href="" title="" class="group">D</a>
+        <a href="" title="" class="group">E</a>
+        <a href="" title="" class="group add">+</a>
+      </div>
+
+      <div class="dropdown group-name">
+        <a
+          class="dropdown-settings"
+          href="#"
+          role="button"
+          id="dropdownSettingsGroup"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Grupo FullCycle
+          <span class="fa fa-chevron-down"></span>
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownSettingsGroup">
+          <a class="dropdown-item" href="#"
+            >Editar grupo <span class="fa fa-edit"></span
+          ></a>
+          <a class="dropdown-item" href="#"
+            >Criar Canal <span class="fas fa-hashtag"></span
+          ></a>
+          <a class="dropdown-item" href="#"
+            >Criar categoria <span class="fas fa-folder-plus"></span
+          ></a>
+          <a class="dropdown-item" href="#"
+            >Url de convite <span class="fas fa-user"></span
+          ></a>
+        </div>
+      </div>
+
+        <div class="channel-list">
+
+        </div> 
     </div>
-    
 
     <script type="text/javascript" src="js/main.js"></script>
-</body>
+  </body>
 </html>
