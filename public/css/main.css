@@ -238,6 +238,9 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
 a:hover, a:focus, a:active {
   text-decoration: none;
 }
@@ -295,14 +298,13 @@ a:hover, a:focus, a:active {
 }
 .content .bar-list-group .group.is-user:after {
   background-color: #ffcd01;
-  width: 16px;
-  height: 16px;
-  padding: 0 4px;
+  width: 10px;
+  height: 10px;
   position: absolute;
   bottom: -4px;
   right: 0;
   border-radius: 50%;
-  border: 4px solid #36393f;
+  border: 2px solid #36393f;
   content: "";
 }
 .content .bar-list-group .group .img-group {
@@ -312,11 +314,17 @@ a:hover, a:focus, a:active {
 }
 .content .group-name {
   grid-area: GN;
+  background-color: #2f3136;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .group-name .dropdown-settings {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2f3136;
-  padding: 0 10px;
+  width: 100%;
   font-size: 1em;
   font-weight: 400;
   color: #ffffff;
