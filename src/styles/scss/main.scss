@@ -1,5 +1,9 @@
-// bootstrap
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+// bootstrap components
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/dropdown";
+
 
 // project
 @import "main/assets";
