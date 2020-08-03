@@ -10003,11 +10003,11 @@ a:hover, a:focus, a:active {
   display: grid;
   grid-template-columns: 71px 240px auto 390px;
   grid-template-rows: 46px auto 52px;
-  grid-template-areas: "SL SN CI SS" "SL CL CD UL" "SL CL CD UL";
+  grid-template-areas: "BLG SN CI SS" "BLG CL CD UL" "BLG CL CD UL";
   height: 100vh;
 }
-.content .server-list {
-  grid-area: SL;
+.content .bar-list-group {
+  grid-area: BLG;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10016,20 +10016,20 @@ a:hover, a:focus, a:active {
   max-height: 100vh;
   overflow-y: scroll;
 }
-.content .server-list::-webkit-scrollbar {
+.content .bar-list-group::-webkit-scrollbar {
   display: none;
 }
-.content .server-list .separator {
+.content .bar-list-group .separator {
   font-size: 0.95em;
   font-weight: 400;
   color: #828386;
   text-align: center;
   margin: 5px 0 15px 0;
 }
-.content .server-list .logo {
+.content .bar-list-group .logo {
   margin-bottom: 20px;
 }
-.content .server-list .group {
+.content .bar-list-group .group {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10041,13 +10041,13 @@ a:hover, a:focus, a:active {
   background-color: #36393f;
   position: relative;
 }
-.content .server-list .group:hover, .content .server-list .group.active {
+.content .bar-list-group .group:hover, .content .bar-list-group .group.active {
   border: 1px solid #828386;
 }
-.content .server-list .group.is-user {
+.content .bar-list-group .group.is-user {
   border: 2px solid #ffcd01;
 }
-.content .server-list .group.is-user:after {
+.content .bar-list-group .group.is-user:after {
   background-color: #ffcd01;
   width: 16px;
   height: 16px;

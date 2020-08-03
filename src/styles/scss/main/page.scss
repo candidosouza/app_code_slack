@@ -1,6 +1,6 @@
 .content {
 
-    // SL = server list
+    // BLG = bar list group
     // SN = server name
     // CI = channel info
     // SS = server search
@@ -11,15 +11,15 @@
     grid-template-columns: 71px 240px auto 390px;
     grid-template-rows: 46px auto 52px;
     grid-template-areas: 
-        'SL SN CI SS'
-        'SL CL CD UL'
-        'SL CL CD UL'
+        'BLG SN CI SS'
+        'BLG CL CD UL'
+        'BLG CL CD UL'
     ;
     height: 100vh; //view height
 
 
-    .server-list {
-        grid-area: SL;
+    .bar-list-group {
+        grid-area: BLG;
 
         display: flex;
         flex-direction: column;
@@ -80,15 +80,6 @@
                     content: '';
                 }
             }
-
-            &.status {
-                &::before {
-
-                }
-
-                
-            }
         }
     }
-    
 }
