@@ -69,16 +69,32 @@
       &.is-user {
         border: 2px solid $full-cycle;
 
-        &:after {
-          background-color: $full-cycle;
-          width: 10px;
-          height: 10px;
+        &::after {
+          display: none;
+        }
+
+        span {
           position: absolute;
-          bottom: -4px;
-          right: 0;
+          bottom: -0.4px;
+          right: -3px;
+          background-color: $primary;
+          border: 3px solid $primary;
           border-radius: 50%;
-          border: 2px solid $primary;
-          content: "";
+
+          font-size: 0.35em;
+
+          &.fa-circle,
+          &.fa-circle-notch {
+            color: $full-cycle;
+          }
+
+          &.fa-minus-circle {
+            color: #df684e;
+          }
+
+          &.fa-dot-circle {
+            color: #757f8b;
+          }
         }
       }
 
@@ -86,6 +102,54 @@
         width: 53px;
         height: 53px;
         border-radius: 50%;
+      }
+    }
+
+    .dropdown-menu {
+      top: -60px !important;
+      left: 197px !important;
+      border-radius: 0;
+      background-color: $tertiary;
+
+      @include respond-to($_1200) {
+        width: 190px;
+      }
+
+      .dropdown-item {
+        padding: 5px 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        color: $white;
+
+        &:hover,
+        &:focus {
+          background-color: $secondary;
+        }
+
+        span {
+          margin-right: 10px;
+          font-size: 0.7em;
+
+          &.fa-circle,
+          &.fa-circle-notch {
+            color: $full-cycle;
+          }
+
+          &.fa-minus-circle {
+            color: #df684e;
+          }
+
+          &.fa-dot-circle {
+            color: #757f8b;
+          }
+
+          &.fa-sign-out-alt {
+            color: $white;
+            font-size: 1.05em;
+          }
+        }
       }
     }
   }
@@ -130,10 +194,19 @@
         justify-content: space-between;
         color: $white;
 
-        &:hover, &:focus {
-            background-color: $secondary;
+        &:hover,
+        &:focus {
+          background-color: $secondary;
         }
       }
     }
+  }
+
+  .channel-list {
+    grid-area: CL;
+
+    background-color: $secondary;
+
+    z-index: 1;
   }
 }

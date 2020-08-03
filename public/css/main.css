@@ -296,21 +296,70 @@ a:hover, a:focus, a:active {
 .content .bar-list-group .group.is-user {
   border: 2px solid #ffcd01;
 }
-.content .bar-list-group .group.is-user:after {
-  background-color: #ffcd01;
-  width: 10px;
-  height: 10px;
+.content .bar-list-group .group.is-user::after {
+  display: none;
+}
+.content .bar-list-group .group.is-user span {
   position: absolute;
-  bottom: -4px;
-  right: 0;
+  bottom: -0.4px;
+  right: -3px;
+  background-color: #36393f;
+  border: 3px solid #36393f;
   border-radius: 50%;
-  border: 2px solid #36393f;
-  content: "";
+  font-size: 0.35em;
+}
+.content .bar-list-group .group.is-user span.fa-circle, .content .bar-list-group .group.is-user span.fa-circle-notch {
+  color: #ffcd01;
+}
+.content .bar-list-group .group.is-user span.fa-minus-circle {
+  color: #df684e;
+}
+.content .bar-list-group .group.is-user span.fa-dot-circle {
+  color: #757f8b;
 }
 .content .bar-list-group .group .img-group {
   width: 53px;
   height: 53px;
   border-radius: 50%;
+}
+.content .bar-list-group .dropdown-menu {
+  top: -60px !important;
+  left: 197px !important;
+  border-radius: 0;
+  background-color: #202225;
+}
+@media only screen and (min-width: 1200px) {
+  .content .bar-list-group .dropdown-menu {
+    width: 190px;
+  }
+}
+.content .bar-list-group .dropdown-menu .dropdown-item {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ffffff;
+}
+.content .bar-list-group .dropdown-menu .dropdown-item:hover, .content .bar-list-group .dropdown-menu .dropdown-item:focus {
+  background-color: #2f3136;
+}
+.content .bar-list-group .dropdown-menu .dropdown-item span {
+  margin-right: 10px;
+  font-size: 0.7em;
+}
+.content .bar-list-group .dropdown-menu .dropdown-item span.fa-circle, .content .bar-list-group .dropdown-menu .dropdown-item span.fa-circle-notch {
+  color: #ffcd01;
+}
+.content .bar-list-group .dropdown-menu .dropdown-item span.fa-minus-circle {
+  color: #df684e;
+}
+.content .bar-list-group .dropdown-menu .dropdown-item span.fa-dot-circle {
+  color: #757f8b;
+}
+.content .bar-list-group .dropdown-menu .dropdown-item span.fa-sign-out-alt {
+  color: #ffffff;
+  font-size: 1.05em;
 }
 .content .group-name {
   grid-area: GN;
@@ -350,4 +399,9 @@ a:hover, a:focus, a:active {
 }
 .content .group-name .dropdown-menu .dropdown-item:hover, .content .group-name .dropdown-menu .dropdown-item:focus {
   background-color: #2f3136;
+}
+.content .channel-list {
+  grid-area: CL;
+  background-color: #2f3136;
+  z-index: 1;
 }
