@@ -3,15 +3,15 @@
     // BLG = bar list group
     // SN = server name
     // CI = channel info
-    // SS = server search
     // CL = channel list
     // CD = channel data
     // UL = user list
     display: grid;
+    // grid-template-columns: 71px 240px 1fr 390px;
     grid-template-columns: 71px 240px auto 390px;
     grid-template-rows: 46px auto 52px;
     grid-template-areas: 
-        'BLG SN CI SS'
+        'BLG SN CI CI'
         'BLG CL CD UL'
         'BLG CL CD UL'
     ;
@@ -60,6 +60,12 @@
             background-color: $primary;
             position: relative;
 
+            font-size: 2em;
+            font-weight: 400;
+            color: $senary;
+
+            overflow: hidden;
+
             &:hover, &.active {
                 border: 1px solid $senary;
             }
@@ -79,6 +85,10 @@
                     border: 4px solid $primary;
                     content: '';
                 }
+            }
+
+            .img-group {
+                max-width: 55px;
             }
         }
     }
