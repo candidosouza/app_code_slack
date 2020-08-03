@@ -329,3 +329,25 @@ a:hover, a:focus, a:active {
   font-weight: 400;
   color: #ffffff;
 }
+.content .group-name .dropdown-menu {
+  top: 10px !important;
+  border-radius: 0;
+  background-color: #202225;
+}
+@media only screen and (min-width: 1200px) {
+  .content .group-name .dropdown-menu {
+    width: 190px;
+    left: 15px !important;
+  }
+}
+.content .group-name .dropdown-menu .dropdown-item {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.content .group-name .dropdown-menu .dropdown-item:hover, .content .group-name .dropdown-menu .dropdown-item:focus {
+  background-color: #2f3136;
+}

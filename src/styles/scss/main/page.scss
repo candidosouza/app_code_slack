@@ -111,5 +111,29 @@
       font-weight: 400;
       color: $white;
     }
+
+    .dropdown-menu {
+      top: 10px !important;
+      border-radius: 0;
+      background-color: $tertiary;
+
+      @include respond-to($_1200) {
+        width: 190px;
+        left: 15px !important;
+      }
+
+      .dropdown-item {
+        padding: 5px 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: $white;
+
+        &:hover, &:focus {
+            background-color: $secondary;
+        }
+      }
+    }
   }
 }
