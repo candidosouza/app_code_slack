@@ -364,7 +364,6 @@ a:hover, a:focus, a:active {
 .content .bar-list-group .dropdown-menu .dropdown-item {
   padding: 5px 10px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   color: #ffffff;
@@ -391,7 +390,7 @@ a:hover, a:focus, a:active {
 }
 .content .group-name {
   grid-area: GN;
-  background-color: #2f3136;
+  background-color: #282A2E;
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -420,7 +419,6 @@ a:hover, a:focus, a:active {
 .content .group-name .dropdown-menu .dropdown-item {
   padding: 5px 10px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
@@ -431,7 +429,6 @@ a:hover, a:focus, a:active {
 .content .channel-info {
   grid-area: CI;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   padding: 0 15px;
@@ -450,5 +447,71 @@ a:hover, a:focus, a:active {
 }
 .content .channel-list {
   grid-area: CL;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 24px 10px;
   background-color: #2f3136;
+  overflow-y: scroll;
+}
+.content .channel-list::-webkit-scrollbar {
+  display: none;
+}
+.content .channel-list .container-channels {
+  display: flex;
+  flex-direction: column;
+}
+.content .channel-list .container-channels .category {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.content .channel-list .container-channels .category .item-category {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #8a8c90;
+  text-transform: uppercase;
+}
+.content .channel-list .container-channels .category .item-category span {
+  font-size: 0.75em;
+  margin-left: 5px;
+}
+.content .channel-list .container-channels .category .add-channel span {
+  font-size: 0.95em;
+  color: #8a8c90;
+}
+.content .channel-list .container-channels .collapse ul, .content .channel-list .container-channels .collapsing ul {
+  list-style: none;
+}
+.content .channel-list .container-channels .collapse ul li, .content .channel-list .container-channels .collapsing ul li {
+  padding: 4px 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+.content .channel-list .container-channels .collapse ul li:hover, .content .channel-list .container-channels .collapse ul li.active, .content .channel-list .container-channels .collapsing ul li:hover, .content .channel-list .container-channels .collapsing ul li.active {
+  background-color: #36393f;
+  transition: background-color 0.2s;
+}
+.content .channel-list .container-channels .collapse ul li:hover .item-channel, .content .channel-list .container-channels .collapse ul li.active .item-channel, .content .channel-list .container-channels .collapsing ul li:hover .item-channel, .content .channel-list .container-channels .collapsing ul li.active .item-channel {
+  color: #ffffff;
+}
+.content .channel-list .container-channels .collapse ul li .item-channel, .content .channel-list .container-channels .collapsing ul li .item-channel {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  display: flex;
+  overflow: hidden;
+  font-size: 1em;
+  font-weight: 400;
+  color: #828386;
+  text-transform: lowercase;
+}
+.content .channel-list .container-channels .collapse ul li .item-channel span, .content .channel-list .container-channels .collapsing ul li .item-channel span {
+  margin-right: 5px;
+}
+.content .channel-list .container-channels .collapse ul li .item-channel:hover, .content .channel-list .container-channels .collapse ul li .item-channel:focus, .content .channel-list .container-channels .collapse ul li .item-channel:active, .content .channel-list .container-channels .collapse ul li .item-channel.active, .content .channel-list .container-channels .collapsing ul li .item-channel:hover, .content .channel-list .container-channels .collapsing ul li .item-channel:focus, .content .channel-list .container-channels .collapsing ul li .item-channel:active, .content .channel-list .container-channels .collapsing ul li .item-channel.active {
+  background-color: #36393f;
+  transition: background-color 0.2s;
 }
