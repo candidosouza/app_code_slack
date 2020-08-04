@@ -390,7 +390,7 @@ a:hover, a:focus, a:active {
 }
 .content .group-name {
   grid-area: GN;
-  background-color: #282A2E;
+  background-color: #282a2e;
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -481,23 +481,30 @@ a:hover, a:focus, a:active {
   font-size: 0.95em;
   color: #8a8c90;
 }
-.content .channel-list .container-channels .collapse ul, .content .channel-list .container-channels .collapsing ul {
+.content .channel-list .container-channels .collapse ul,
+.content .channel-list .container-channels .collapsing ul {
   list-style: none;
 }
-.content .channel-list .container-channels .collapse ul li, .content .channel-list .container-channels .collapsing ul li {
+.content .channel-list .container-channels .collapse ul li,
+.content .channel-list .container-channels .collapsing ul li {
   padding: 4px 0;
   width: 100%;
   background-color: transparent;
   transition: background-color 0.2s;
 }
-.content .channel-list .container-channels .collapse ul li:hover, .content .channel-list .container-channels .collapse ul li.active, .content .channel-list .container-channels .collapsing ul li:hover, .content .channel-list .container-channels .collapsing ul li.active {
+.content .channel-list .container-channels .collapse ul li:hover, .content .channel-list .container-channels .collapse ul li.active,
+.content .channel-list .container-channels .collapsing ul li:hover,
+.content .channel-list .container-channels .collapsing ul li.active {
   background-color: #36393f;
   transition: background-color 0.2s;
 }
-.content .channel-list .container-channels .collapse ul li:hover .item-channel, .content .channel-list .container-channels .collapse ul li.active .item-channel, .content .channel-list .container-channels .collapsing ul li:hover .item-channel, .content .channel-list .container-channels .collapsing ul li.active .item-channel {
+.content .channel-list .container-channels .collapse ul li:hover .item-channel, .content .channel-list .container-channels .collapse ul li.active .item-channel,
+.content .channel-list .container-channels .collapsing ul li:hover .item-channel,
+.content .channel-list .container-channels .collapsing ul li.active .item-channel {
   color: #ffffff;
 }
-.content .channel-list .container-channels .collapse ul li .item-channel, .content .channel-list .container-channels .collapsing ul li .item-channel {
+.content .channel-list .container-channels .collapse ul li .item-channel,
+.content .channel-list .container-channels .collapsing ul li .item-channel {
   display: flex;
   align-items: center;
   margin-left: 15px;
@@ -508,10 +515,175 @@ a:hover, a:focus, a:active {
   color: #828386;
   text-transform: lowercase;
 }
-.content .channel-list .container-channels .collapse ul li .item-channel span, .content .channel-list .container-channels .collapsing ul li .item-channel span {
+.content .channel-list .container-channels .collapse ul li .item-channel span,
+.content .channel-list .container-channels .collapsing ul li .item-channel span {
   margin-right: 5px;
 }
-.content .channel-list .container-channels .collapse ul li .item-channel:hover, .content .channel-list .container-channels .collapse ul li .item-channel:focus, .content .channel-list .container-channels .collapse ul li .item-channel:active, .content .channel-list .container-channels .collapse ul li .item-channel.active, .content .channel-list .container-channels .collapsing ul li .item-channel:hover, .content .channel-list .container-channels .collapsing ul li .item-channel:focus, .content .channel-list .container-channels .collapsing ul li .item-channel:active, .content .channel-list .container-channels .collapsing ul li .item-channel.active {
+.content .channel-list .container-channels .collapse ul li .item-channel:hover, .content .channel-list .container-channels .collapse ul li .item-channel:focus, .content .channel-list .container-channels .collapse ul li .item-channel:active, .content .channel-list .container-channels .collapse ul li .item-channel.active,
+.content .channel-list .container-channels .collapsing ul li .item-channel:hover,
+.content .channel-list .container-channels .collapsing ul li .item-channel:focus,
+.content .channel-list .container-channels .collapsing ul li .item-channel:active,
+.content .channel-list .container-channels .collapsing ul li .item-channel.active {
   background-color: #36393f;
   transition: background-color 0.2s;
+}
+.content .user-list {
+  grid-area: UL;
+  background-color: #2f3136;
+  overflow-y: scroll;
+}
+.content .user-list::-webkit-scrollbar {
+  width: 4px;
+}
+.content .user-list::-webkit-scrollbar-thumb {
+  background-color: #202225;
+  border-radius: 4px;
+}
+.content .user-list::-webkit-scrollbar-track {
+  background-color: #2f3136;
+}
+.content .user-list .container-users {
+  padding: 10px 15px 0 15px;
+}
+.content .user-list .container-users .type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.content .user-list .container-users .type p {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #8a8c90;
+}
+.content .user-list .container-users .type span {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #8a8c90;
+}
+.content .user-list .container-users .list {
+  list-style: none;
+}
+.content .user-list .container-users .list.moderator li .user-item .user p {
+  color: #ffcd01;
+}
+.content .user-list .container-users .list li {
+  padding: 10px 15px;
+}
+.content .user-list .container-users .list li:hover {
+  background-color: #202225;
+}
+.content .user-list .container-users .list li:hover .user-item span {
+  display: inline;
+  font-size: 1em;
+  color: #ffffff;
+}
+.content .user-list .container-users .list li .user-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .user-list .container-users .list li .user-item::after {
+  display: none;
+}
+.content .user-list .container-users .list li .user-item .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .user-list .container-users .list li .user-item .user .img-user {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.content .user-list .container-users .list li .user-item .user p {
+  font-size: 1em;
+  font-weight: 400;
+  color: #8a8c90;
+  overflow: hidden;
+}
+.content .user-list .container-users .list li .user-item span {
+  display: none;
+}
+.content .user-list .container-users .list li .dropdown-menu {
+  background-color: #202225;
+  padding: 0;
+}
+@media only screen and (min-width: 1200px) {
+  .content .user-list .container-users .list li .dropdown-menu {
+    width: 300px;
+    top: -55px !important;
+    left: -330px !important;
+  }
+}
+.content .user-list .container-users .list li .dropdown-menu .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.content .user-list .container-users .list li .dropdown-menu .close span {
+  font-size: 1.5em;
+  color: #8a8c90;
+}
+.content .user-list .container-users .list li .dropdown-menu .dropdown-user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content .user-list .container-users .list li .dropdown-menu .dropdown-user .img-user {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+.content .user-list .container-users .list li .dropdown-menu .dropdown-user p {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #8a8c90;
+  margin: 15px;
+}
+.content .user-list .container-users .list li .dropdown-menu .dropdown-role-user {
+  background-color: #2f3136;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px;
+}
+@media only screen and (min-width: 1200px) {
+  .content .user-list .container-users .list li .dropdown-menu .dropdown-role-user {
+    height: 120px;
+    padding: 15px 40px;
+  }
+}
+.content .user-list .container-users .list li .dropdown-menu .dropdown-role-user .form-role {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content .user-list .container-users .list li .dropdown-menu .dropdown-role-user .form-role label {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #ffffff;
+  margin-right: 15px;
+}
+.content .user-list .container-users .list li .dropdown-menu .dropdown-role-user .form-role .check-input {
+  color: #40444b;
+  border: 1px solid #ffffff;
+}
+.content .user-list .container-users .list li .dropdown-menu .dropdown-role-user a {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 15px;
+}
+.content .user-list .container-users .list li .dropdown-menu .dropdown-role-user a:hover {
+  color: #8a8c90;
+  text-decoration: underline;
 }
