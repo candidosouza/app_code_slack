@@ -287,7 +287,7 @@ a:hover, a:focus, a:active {
   background-color: #36393f;
   position: relative;
   font-size: 2em;
-  font-weight: 400;
+  font-weight: 300;
   color: #828386;
 }
 .content .bar-list-group .group:hover, .content .bar-list-group .group.active {
@@ -400,8 +400,27 @@ a:hover, a:focus, a:active {
 .content .group-name .dropdown-menu .dropdown-item:hover, .content .group-name .dropdown-menu .dropdown-item:focus {
   background-color: #2f3136;
 }
+.content .channel-info {
+  grid-area: CI;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 15px;
+  background-color: #202225;
+  z-index: 2;
+}
+.content .channel-info span {
+  margin-right: 10px;
+  font-size: 1em;
+  color: #74777a;
+}
+.content .channel-info h2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #ffffff;
+}
 .content .channel-list {
   grid-area: CL;
   background-color: #2f3136;
-  z-index: 1;
 }

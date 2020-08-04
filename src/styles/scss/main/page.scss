@@ -58,7 +58,7 @@
       position: relative;
 
       font-size: 2em;
-      font-weight: 400;
+      font-weight: 300;
       color: $senary;
 
       &:hover,
@@ -202,11 +202,33 @@
     }
   }
 
+  .channel-info {
+    grid-area: CI;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 15px;
+    background-color: $tertiary;
+    z-index: 2;
+
+    span {
+      margin-right: 10px;
+      font-size: 1em;
+      color: $symbol;
+    }
+
+    h2 {
+      font-size: 1em;
+      font-weight: 400;
+      color: $white;
+    }
+  }
+
   .channel-list {
     grid-area: CL;
 
     background-color: $secondary;
-
-    z-index: 1;
   }
 }
