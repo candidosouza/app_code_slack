@@ -8,10 +8,9 @@
   display: grid;
   // grid-template-columns: 71px 240px 1fr 390px;
   grid-template-columns: 71px 240px auto 390px;
-  grid-template-rows: 46px auto 52px;
+  grid-template-rows: 46px auto;
   grid-template-areas:
     "BLG GN CI CI"
-    "BLG CL CD UL"
     "BLG CL CD UL";
   height: 100vh; //view height
 

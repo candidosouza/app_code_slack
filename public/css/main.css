@@ -231,6 +231,34 @@
   color: #212529;
 }
 
+.fade {
+  transition: opacity 0.15s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    transition: none;
+  }
+}
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -248,8 +276,8 @@ a:hover, a:focus, a:active {
 .content {
   display: grid;
   grid-template-columns: 71px 240px auto 390px;
-  grid-template-rows: 46px auto 52px;
-  grid-template-areas: "BLG GN CI CI" "BLG CL CD UL" "BLG CL CD UL";
+  grid-template-rows: 46px auto;
+  grid-template-areas: "BLG GN CI CI" "BLG CL CD UL";
   height: 100vh;
 }
 .content .bar-list-group {
