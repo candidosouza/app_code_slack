@@ -405,21 +405,36 @@
             .user {
               display: flex;
               align-items: center;
-              justify-content: space-between;
+              justify-content: flex-start;
+
+              overflow: hidden;
+              
 
               .img-user {
                 width: 40px;
                 height: 40px;
+                flex-shrink: 0;
                 border-radius: 50%;
                 margin-right: 15px;
+                background-color: $primary;
+
+                img {
+                  width: 100%;
+                  border-radius: 50%;
+                  width: 39px;
+                  height: 39px;
+                }
               }
 
               p {
                 font-size: 1em;
                 font-weight: 400;
                 color: $gray;
-
+                text-align: left;
+                white-space: nowrap;
+                text-overflow: ellipsis;
                 overflow: hidden;
+                padding-right: 15px;
               }
             }
 
@@ -441,8 +456,8 @@
 
             .close {
               position: absolute;
-              top: 5px;
-              right: 5px;
+              top: 0;
+              right: 10px;
               cursor: pointer;
 
               span {
@@ -461,8 +476,17 @@
               .img-user {
                 width: 95px;
                 height: 95px;
+                flex-shrink: 0;
                 border-radius: 50%;
                 margin-top: 30px;
+                background-color: $primary;
+
+                img {
+                  width: 100%;
+                  border-radius: 50%;
+                  width: 95px;
+                  height: 95px;
+                }
               }
 
               p {
