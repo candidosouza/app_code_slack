@@ -358,7 +358,7 @@
       padding: 30px 20px;
 
       .form-message {
-        
+        position: relative;
 
         .form-control {
           width: 100%;
@@ -366,10 +366,23 @@
           padding: 5px 60px 5px 10px;
           border-radius: 7px;
 
-          &::before {
-            font-family: "Font Awesome 5 Free";
-            content: "\f1ea";
+          font-size: 1.2em;
+          color: $white;
+          
+
+          &::placeholder {
+            color: $gray;
           }
+          
+        }
+
+        span {
+          font-size: 2em;
+          color: $gray;
+          position: absolute;
+          top: 22%;
+          right: 15px;
+          transition: 180ms ease-in-out;
         }
       }
     }
