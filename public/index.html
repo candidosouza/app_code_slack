@@ -106,6 +106,49 @@
         </div>
       </div>
 
+
+
+      <!-- ****************************************** -->
+      <!-- modal de criação de canal -->
+      <!-- ****************************************** -->
+      <div
+        class="modal fade"
+        id="addChannelModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="addChannalModalModalTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </div>
+
+              <h2># Criar canal de texto</h2>
+              <form class="form-modal">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="nameGroup"
+                    placeholder="Nome do canal"
+                  />
+                </div>
+
+                <div class="form-group right">
+                  <a href="" title="Cancelar" class="btn-cancel">Cancelar</a>
+                  <button type="submit" class="btn-code">Criar canal</button>
+                </div>
+                </form>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- ****************************************** -->
       <!-- bar-list-group BLG -->
       <!-- ****************************************** -->
@@ -218,9 +261,9 @@
               <span class="fa fa-chevron-down"></span> Regras
             </a>
 
-            <a class="add-channel" href="" title="Adicionar Canal"
-              ><span class="fa fa-plus"></span
-            ></a>
+            <a class="add-channel" href="" title="Adicionar Canal" data-toggle="modal" data-target="#addChannelModal">
+              <span class="fa fa-plus"></span>
+            </a>
           </div>
           <div class="collapse" id="collapseChannel1">
             <ul>
@@ -246,9 +289,9 @@
               <span class="fa fa-chevron-down"></span> Canais
             </a>
 
-            <a class="add-channel" href="" title="Adicionar Canal"
-              ><span class="fa fa-plus"></span
-            ></a>
+            <a class="add-channel" href="" title="Adicionar Canal" data-toggle="modal" data-target="#addChannelModal">
+              <span class="fa fa-plus"></span>
+            </a>
           </div>
           <div class="collapse" id="collapseChannel2">
             <ul>
