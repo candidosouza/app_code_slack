@@ -667,7 +667,8 @@
 }
 
 #addgroupModal,
-#linkGroupModal {
+#linkGroupModal,
+#addChannelModal {
   .modal-content {
     background-color: $secondary;
 
@@ -697,7 +698,7 @@
       }
 
       h2 {
-        font-size: 2em;
+        font-size: 1.7em;
         font-weight: 700;
         color: $white;
         text-transform: uppercase;
@@ -708,11 +709,21 @@
       .form-modal {
         width: 100%;
 
-        P {
+        p {
           font-size: 1em;
           font-weight: 400;
-          color:$white;
+          color: $white;
           margin-bottom: 5px;
+        }
+
+        .form-group {
+          &.right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            margin-top: 20px;
+          }
         }
 
         .form-control {
@@ -756,6 +767,40 @@
           color: $secondary;
           background-color: #fcca50;
           border-color: #fcca50;
+
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: $secondary;
+            color: #fcca50;
+          }
+        }
+
+        .btn-code {
+          height: 60px;
+          border-radius: 5px;
+
+          font-size: 1.5em;
+          font-weight: 600;
+          color: $secondary;
+          background-color: #fcca50;
+          border-color: #fcca50;
+          padding-left: 30px;
+          padding-right: 30px;
+
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: $secondary;
+            color: #fcca50;
+          }
+        }
+
+        .btn-cancel {
+          font-size: 1.5em;
+          font-weight: 600;
+          color: $white;
+          margin-right: 30px;
         }
       }
     }
