@@ -45,7 +45,7 @@
               </div>
 
               <h2>Criar Grupo</h2>
-              <form class="form-group">
+              <form class="form-modal">
                 <div class="form-group">
                   <input
                     type="text"
@@ -62,7 +62,49 @@
         </div>
       </div>
 
-      
+      <!-- ****************************************** -->
+      <!-- modal de link grupo -->
+      <!-- ****************************************** -->
+      <div
+        class="modal fade"
+        id="linkGroupModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="linkGroupModalModalTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </div>
+
+              <h2>Convidar para o Grupo</h2>
+              <form class="form-modal">
+                <p>Envie o link de convite do grupo</p>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="https://codeslack.com.br"
+                    aria-describedby="button-link"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="button-link"
+                    >
+                      Copiar
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- ****************************************** -->
       <!-- bar-list-group BLG -->
