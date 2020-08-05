@@ -26,36 +26,84 @@
   </head>
   <body>
     <div class="content">
+      <!-- ****************************************** -->
+      <!-- modal de adicionar grupo -->
+      <!-- ****************************************** -->
+      <div
+        class="modal fade"
+        id="addgroupModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="addgroupModalTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </div>
 
-
-
-
-
-
-
-<!-- ****************************************** -->
-<!-- modal de adicionar grupo -->
-<!-- ****************************************** -->
-<div class="modal fade" id="addgroupModal" tabindex="-1" role="dialog" aria-labelledby="addgroupModalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="addgroupModalTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+              <h2>Criar Grupo</h2>
+              <form class="form-group">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="nameGroup"
+                    placeholder="Nome do grupo"
+                  />
+                </div>
+                <button type="submit" class="btn-code-slack">Criar</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
+      <!-- ****************************************** -->
+      <!-- modal de link grupo -->
+      <!-- ****************************************** -->
+      <div
+        class="modal fade"
+        id="linkGroupModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="linkGroupModalModalTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </div>
+
+              <h2>Convidar para o Grupo</h2>
+              <form class="form-group">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="https://codeslack.com.br"
+                    aria-describedby="button-addon2"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Botão
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- ****************************************** -->
       <!-- bar-list-group BLG -->
@@ -71,11 +119,7 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          <img
-            src="./img/huguinho.png"
-            alt="Usuário"
-            class="img-group"
-          />
+          <img src="./img/huguinho.png" alt="Usuário" class="img-group" />
 
           <!-- <span class="fas fa-circle"></span> -->
           <!-- <span class="fas fa-circle-notch"></span> -->
@@ -105,9 +149,15 @@
         <a href="" title="" class="group">O</a>
         <a href="" title="" class="group">D</a>
         <a href="" title="" class="group">E</a>
-        <a href="" title="" class="group add" data-toggle="modal" data-target="#addgroupModal">+</a>
+        <a
+          href=""
+          title=""
+          class="group add"
+          data-toggle="modal"
+          data-target="#addgroupModal"
+          >+</a
+        >
       </div>
-
 
       <!-- ****************************************** -->
       <!-- group-name GN -->
@@ -142,7 +192,6 @@
         </div>
       </div>
 
-
       <!-- ****************************************** -->
       <!-- channel-info CI -->
       <!-- ****************************************** -->
@@ -150,7 +199,6 @@
         <span class="fas fa-hashtag"></span>
         <h2>nome do canal</h2>
       </div>
-
 
       <!-- ****************************************** -->
       <!-- channel-list CL -->
@@ -223,79 +271,71 @@
         </div>
       </div>
 
-
       <!-- ****************************************** -->
       <!-- channel-data CD -->
       <!-- ****************************************** -->
       <div class="channel-data">
-
         <div class="container-messages">
-
           <div class="message">
-
             <div class="img-user">
-              <img src="./img/huguinho.png" alt="Usuário" class=""/>
+              <img src="./img/huguinho.png" alt="Usuário" class="" />
             </div>
 
             <div class="user-message">
-              <header>
-                Nome do usuário <time pubdate>05/08/2020</time>
-              </header>
+              <header>Nome do usuário <time pubdate>05/08/2020</time></header>
               <div class="content-message">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus sint, mollitia unde tempore molestias, totam neque temporibus sapiente, tenetur voluptatibus consequatur reiciendis adipisci iusto facere odio praesentium deleniti quasi!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                natus sint, mollitia unde tempore molestias, totam neque
+                temporibus sapiente, tenetur voluptatibus consequatur reiciendis
+                adipisci iusto facere odio praesentium deleniti quasi!
               </div>
             </div>
-
-          </div>
-
-
-          <div class="message">
-
-            <div class="img-user">
-              <img src="./img/huguinho.png" alt="Usuário" class=""/>
-            </div>
-
-            <div class="user-message">
-              <header>
-                Nome do usuário <time pubdate>05/08/2020</time>
-              </header>
-              <div class="content-message">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus sint, mollitia unde
-              </div>
-            </div>
-
           </div>
 
           <div class="message">
-
             <div class="img-user">
-              <img src="./img/huguinho.png" alt="Usuário" class=""/>
+              <img src="./img/huguinho.png" alt="Usuário" class="" />
             </div>
 
             <div class="user-message">
-              <header>
-                Nome do usuário <time pubdate>05/08/2020</time>
-              </header>
+              <header>Nome do usuário <time pubdate>05/08/2020</time></header>
               <div class="content-message">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus sint, mollitia unde tempore molestias, totam neque temporibus sapiente, tenetur voluptatibus
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                natus sint, mollitia unde
               </div>
             </div>
-
           </div>
 
+          <div class="message">
+            <div class="img-user">
+              <img src="./img/huguinho.png" alt="Usuário" class="" />
+            </div>
+
+            <div class="user-message">
+              <header>Nome do usuário <time pubdate>05/08/2020</time></header>
+              <div class="content-message">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                natus sint, mollitia unde tempore molestias, totam neque
+                temporibus sapiente, tenetur voluptatibus
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="container-send-message">
           <form class="form-message">
             <div class="form-group">
-              <textarea class="form-control" id="message" rows="2" placeholder="Conversar"></textarea>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="2"
+                placeholder="Conversar"
+              ></textarea>
               <span class="fas fa-smile"></span>
             </div>
           </form>
         </div>
-
       </div>
-
 
       <!-- ****************************************** -->
       <!-- user-list UL -->
@@ -309,10 +349,17 @@
 
           <ul class="list moderator">
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -321,26 +368,32 @@
               </a>
 
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -349,10 +402,17 @@
             </li>
 
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -360,28 +420,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -390,10 +455,17 @@
             </li>
 
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -401,28 +473,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -432,7 +509,6 @@
           </ul>
         </div>
 
-
         <div class="container-users">
           <div class="type">
             <p>Disponíveis</p>
@@ -441,10 +517,17 @@
 
           <ul class="list">
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -452,28 +535,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -482,10 +570,17 @@
             </li>
 
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -493,28 +588,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -523,10 +623,17 @@
             </li>
 
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -534,28 +641,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -564,10 +676,17 @@
             </li>
 
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -575,28 +694,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -605,10 +729,17 @@
             </li>
 
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -616,28 +747,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -646,10 +782,17 @@
             </li>
 
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -657,28 +800,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -687,10 +835,17 @@
             </li>
 
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -698,28 +853,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -728,10 +888,17 @@
             </li>
 
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -739,28 +906,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
@@ -769,10 +941,17 @@
             </li>
 
             <li>
-              <a href="" title="" class="user-item  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                href=""
+                title=""
+                class="user-item  dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <div class="user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
@@ -780,28 +959,33 @@
                 <span class="fas fa-cog"></span>
               </a>
 
-
               <div class="dropdown-menu">
-
-                <div class="close" data-dismiss="dropdown-menu" aria-label="Close">
+                <div
+                  class="close"
+                  data-dismiss="dropdown-menu"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </div>
 
                 <div class="dropdown-user">
                   <div class="img-user">
-                    <img src="./img/huguinho.png" alt="Usuário" class=""/>
+                    <img src="./img/huguinho.png" alt="Usuário" class="" />
                   </div>
                   <p>Nome do usuário</p>
                 </div>
 
                 <div class="dropdown-role-user">
                   <form action="" class="form-role">
-                    
-                      <label class="form-check-label" for="checkModerador">
-                        Tornar Moderador
-                      </label>
-                      <input class="check-input" type="checkbox" value="" id="checkModerador">
-                    
+                    <label class="form-check-label" for="checkModerador">
+                      Tornar Moderador
+                    </label>
+                    <input
+                      class="check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkModerador"
+                    />
                   </form>
 
                   <a href="" title="">Remocer do grupo</a>
