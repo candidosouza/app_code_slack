@@ -2274,12 +2274,16 @@ a:hover, a:focus, a:active {
 
 #addgroupModal .modal-content,
 #linkGroupModal .modal-content,
-#addChannelModal .modal-content {
+#addChannelModal .modal-content,
+#addCategoryModal .modal-content,
+#editGroupModal .modal-content {
   background-color: #2f3136;
 }
 #addgroupModal .modal-content .modal-body,
 #linkGroupModal .modal-content .modal-body,
-#addChannelModal .modal-content .modal-body {
+#addChannelModal .modal-content .modal-body,
+#addCategoryModal .modal-content .modal-body,
+#editGroupModal .modal-content .modal-body {
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -2290,13 +2294,17 @@ a:hover, a:focus, a:active {
 @media only screen and (min-width: 1200px) {
   #addgroupModal .modal-content .modal-body,
 #linkGroupModal .modal-content .modal-body,
-#addChannelModal .modal-content .modal-body {
+#addChannelModal .modal-content .modal-body,
+#addCategoryModal .modal-content .modal-body,
+#editGroupModal .modal-content .modal-body {
     padding: 30px;
   }
 }
 #addgroupModal .modal-content .modal-body .close,
 #linkGroupModal .modal-content .modal-body .close,
-#addChannelModal .modal-content .modal-body .close {
+#addChannelModal .modal-content .modal-body .close,
+#addCategoryModal .modal-content .modal-body .close,
+#editGroupModal .modal-content .modal-body .close {
   position: absolute;
   right: 10px;
   top: 0;
@@ -2304,13 +2312,17 @@ a:hover, a:focus, a:active {
 }
 #addgroupModal .modal-content .modal-body .close span,
 #linkGroupModal .modal-content .modal-body .close span,
-#addChannelModal .modal-content .modal-body .close span {
+#addChannelModal .modal-content .modal-body .close span,
+#addCategoryModal .modal-content .modal-body .close span,
+#editGroupModal .modal-content .modal-body .close span {
   font-size: 2em;
   color: #8a8c90;
 }
 #addgroupModal .modal-content .modal-body h2,
 #linkGroupModal .modal-content .modal-body h2,
-#addChannelModal .modal-content .modal-body h2 {
+#addChannelModal .modal-content .modal-body h2,
+#addCategoryModal .modal-content .modal-body h2,
+#editGroupModal .modal-content .modal-body h2 {
   font-size: 1.7em;
   font-weight: 700;
   color: #ffffff;
@@ -2320,12 +2332,16 @@ a:hover, a:focus, a:active {
 }
 #addgroupModal .modal-content .modal-body .form-modal,
 #linkGroupModal .modal-content .modal-body .form-modal,
-#addChannelModal .modal-content .modal-body .form-modal {
+#addChannelModal .modal-content .modal-body .form-modal,
+#addCategoryModal .modal-content .modal-body .form-modal,
+#editGroupModal .modal-content .modal-body .form-modal {
   width: 100%;
 }
 #addgroupModal .modal-content .modal-body .form-modal p,
 #linkGroupModal .modal-content .modal-body .form-modal p,
-#addChannelModal .modal-content .modal-body .form-modal p {
+#addChannelModal .modal-content .modal-body .form-modal p,
+#addCategoryModal .modal-content .modal-body .form-modal p,
+#editGroupModal .modal-content .modal-body .form-modal p {
   font-size: 1em;
   font-weight: 400;
   color: #ffffff;
@@ -2333,7 +2349,9 @@ a:hover, a:focus, a:active {
 }
 #addgroupModal .modal-content .modal-body .form-modal .form-group.right,
 #linkGroupModal .modal-content .modal-body .form-modal .form-group.right,
-#addChannelModal .modal-content .modal-body .form-modal .form-group.right {
+#addChannelModal .modal-content .modal-body .form-modal .form-group.right,
+#addCategoryModal .modal-content .modal-body .form-modal .form-group.right,
+#editGroupModal .modal-content .modal-body .form-modal .form-group.right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -2341,7 +2359,9 @@ a:hover, a:focus, a:active {
 }
 #addgroupModal .modal-content .modal-body .form-modal .form-control,
 #linkGroupModal .modal-content .modal-body .form-modal .form-control,
-#addChannelModal .modal-content .modal-body .form-modal .form-control {
+#addChannelModal .modal-content .modal-body .form-modal .form-control,
+#addCategoryModal .modal-content .modal-body .form-modal .form-control,
+#editGroupModal .modal-content .modal-body .form-modal .form-control {
   height: 60px;
   border-radius: 5px;
   background-color: #40444b;
@@ -2349,23 +2369,27 @@ a:hover, a:focus, a:active {
   font-size: 1.2em;
   color: #8a8c90;
 }
-#addgroupModal .modal-content .modal-body .form-modal .form-control::-moz-placeholder, #linkGroupModal .modal-content .modal-body .form-modal .form-control::-moz-placeholder, #addChannelModal .modal-content .modal-body .form-modal .form-control::-moz-placeholder {
+#addgroupModal .modal-content .modal-body .form-modal .form-control::-moz-placeholder, #linkGroupModal .modal-content .modal-body .form-modal .form-control::-moz-placeholder, #addChannelModal .modal-content .modal-body .form-modal .form-control::-moz-placeholder, #addCategoryModal .modal-content .modal-body .form-modal .form-control::-moz-placeholder, #editGroupModal .modal-content .modal-body .form-modal .form-control::-moz-placeholder {
   color: #8a8c90;
 }
-#addgroupModal .modal-content .modal-body .form-modal .form-control:-ms-input-placeholder, #linkGroupModal .modal-content .modal-body .form-modal .form-control:-ms-input-placeholder, #addChannelModal .modal-content .modal-body .form-modal .form-control:-ms-input-placeholder {
+#addgroupModal .modal-content .modal-body .form-modal .form-control:-ms-input-placeholder, #linkGroupModal .modal-content .modal-body .form-modal .form-control:-ms-input-placeholder, #addChannelModal .modal-content .modal-body .form-modal .form-control:-ms-input-placeholder, #addCategoryModal .modal-content .modal-body .form-modal .form-control:-ms-input-placeholder, #editGroupModal .modal-content .modal-body .form-modal .form-control:-ms-input-placeholder {
   color: #8a8c90;
 }
-#addgroupModal .modal-content .modal-body .form-modal .form-control::-ms-input-placeholder, #linkGroupModal .modal-content .modal-body .form-modal .form-control::-ms-input-placeholder, #addChannelModal .modal-content .modal-body .form-modal .form-control::-ms-input-placeholder {
+#addgroupModal .modal-content .modal-body .form-modal .form-control::-ms-input-placeholder, #linkGroupModal .modal-content .modal-body .form-modal .form-control::-ms-input-placeholder, #addChannelModal .modal-content .modal-body .form-modal .form-control::-ms-input-placeholder, #addCategoryModal .modal-content .modal-body .form-modal .form-control::-ms-input-placeholder, #editGroupModal .modal-content .modal-body .form-modal .form-control::-ms-input-placeholder {
   color: #8a8c90;
 }
 #addgroupModal .modal-content .modal-body .form-modal .form-control::placeholder,
 #linkGroupModal .modal-content .modal-body .form-modal .form-control::placeholder,
-#addChannelModal .modal-content .modal-body .form-modal .form-control::placeholder {
+#addChannelModal .modal-content .modal-body .form-modal .form-control::placeholder,
+#addCategoryModal .modal-content .modal-body .form-modal .form-control::placeholder,
+#editGroupModal .modal-content .modal-body .form-modal .form-control::placeholder {
   color: #8a8c90;
 }
 #addgroupModal .modal-content .modal-body .form-modal .btn-code-slack,
 #linkGroupModal .modal-content .modal-body .form-modal .btn-code-slack,
-#addChannelModal .modal-content .modal-body .form-modal .btn-code-slack {
+#addChannelModal .modal-content .modal-body .form-modal .btn-code-slack,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-code-slack,
+#editGroupModal .modal-content .modal-body .form-modal .btn-code-slack {
   width: 100%;
   height: 60px;
   border-radius: 5px;
@@ -2383,13 +2407,21 @@ a:hover, a:focus, a:active {
 #linkGroupModal .modal-content .modal-body .form-modal .btn-code-slack:active,
 #addChannelModal .modal-content .modal-body .form-modal .btn-code-slack:hover,
 #addChannelModal .modal-content .modal-body .form-modal .btn-code-slack:focus,
-#addChannelModal .modal-content .modal-body .form-modal .btn-code-slack:active {
+#addChannelModal .modal-content .modal-body .form-modal .btn-code-slack:active,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-code-slack:hover,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-code-slack:focus,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-code-slack:active,
+#editGroupModal .modal-content .modal-body .form-modal .btn-code-slack:hover,
+#editGroupModal .modal-content .modal-body .form-modal .btn-code-slack:focus,
+#editGroupModal .modal-content .modal-body .form-modal .btn-code-slack:active {
   background-color: #2f3136;
   color: #fcca50;
 }
 #addgroupModal .modal-content .modal-body .form-modal .btn-outline-secondary,
 #linkGroupModal .modal-content .modal-body .form-modal .btn-outline-secondary,
-#addChannelModal .modal-content .modal-body .form-modal .btn-outline-secondary {
+#addChannelModal .modal-content .modal-body .form-modal .btn-outline-secondary,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-outline-secondary,
+#editGroupModal .modal-content .modal-body .form-modal .btn-outline-secondary {
   font-size: 1.5em;
   font-weight: 400;
   color: #2f3136;
@@ -2402,13 +2434,21 @@ a:hover, a:focus, a:active {
 #linkGroupModal .modal-content .modal-body .form-modal .btn-outline-secondary:active,
 #addChannelModal .modal-content .modal-body .form-modal .btn-outline-secondary:hover,
 #addChannelModal .modal-content .modal-body .form-modal .btn-outline-secondary:focus,
-#addChannelModal .modal-content .modal-body .form-modal .btn-outline-secondary:active {
+#addChannelModal .modal-content .modal-body .form-modal .btn-outline-secondary:active,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-outline-secondary:hover,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-outline-secondary:focus,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-outline-secondary:active,
+#editGroupModal .modal-content .modal-body .form-modal .btn-outline-secondary:hover,
+#editGroupModal .modal-content .modal-body .form-modal .btn-outline-secondary:focus,
+#editGroupModal .modal-content .modal-body .form-modal .btn-outline-secondary:active {
   background-color: #2f3136;
   color: #fcca50;
 }
 #addgroupModal .modal-content .modal-body .form-modal .btn-code,
 #linkGroupModal .modal-content .modal-body .form-modal .btn-code,
-#addChannelModal .modal-content .modal-body .form-modal .btn-code {
+#addChannelModal .modal-content .modal-body .form-modal .btn-code,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-code,
+#editGroupModal .modal-content .modal-body .form-modal .btn-code {
   height: 60px;
   border-radius: 5px;
   font-size: 1.5em;
@@ -2425,13 +2465,21 @@ a:hover, a:focus, a:active {
 #linkGroupModal .modal-content .modal-body .form-modal .btn-code:active,
 #addChannelModal .modal-content .modal-body .form-modal .btn-code:hover,
 #addChannelModal .modal-content .modal-body .form-modal .btn-code:focus,
-#addChannelModal .modal-content .modal-body .form-modal .btn-code:active {
+#addChannelModal .modal-content .modal-body .form-modal .btn-code:active,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-code:hover,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-code:focus,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-code:active,
+#editGroupModal .modal-content .modal-body .form-modal .btn-code:hover,
+#editGroupModal .modal-content .modal-body .form-modal .btn-code:focus,
+#editGroupModal .modal-content .modal-body .form-modal .btn-code:active {
   background-color: #2f3136;
   color: #fcca50;
 }
 #addgroupModal .modal-content .modal-body .form-modal .btn-cancel,
 #linkGroupModal .modal-content .modal-body .form-modal .btn-cancel,
-#addChannelModal .modal-content .modal-body .form-modal .btn-cancel {
+#addChannelModal .modal-content .modal-body .form-modal .btn-cancel,
+#addCategoryModal .modal-content .modal-body .form-modal .btn-cancel,
+#editGroupModal .modal-content .modal-body .form-modal .btn-cancel {
   font-size: 1.5em;
   font-weight: 600;
   color: #ffffff;
