@@ -7,6 +7,7 @@ try {
 
     $(document).ready(function () {
         $('.collapse').collapse('show');
+        $('#linkGroupModal').modal('show');
     });
 } catch (e) {
     console.log(e);
