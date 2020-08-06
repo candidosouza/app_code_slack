@@ -14,6 +14,18 @@
     "BLG CL CD UL";
   height: 100vh; //view height
 
+  @include respond-to($_768) {
+    grid-template-columns: 71px 100px auto 130px;
+  }
+
+  @include respond-to($_992) {
+    grid-template-columns: 71px 150px auto 130px;
+  }
+
+  @include respond-to($_1200) {
+    grid-template-columns: 71px 240px auto 390px;
+  }
+
   .bar-list-group {
     grid-area: BLG;
 
@@ -41,6 +53,10 @@
     .logo {
       margin-bottom: 20px;
       width: 55px;
+
+      @include respond-to($_768) {
+
+      }
     }
 
     .group {
@@ -473,6 +489,7 @@
   .user-list {
     grid-area: UL;
 
+    display: none;
     background-color: $secondary;
 
     overflow-y: scroll;
@@ -489,6 +506,10 @@
 
     &::-webkit-scrollbar-track {
       background-color: $secondary;
+    }
+
+    @include respond-to($_768) {
+      display: inline;
     }
 
     .container-users {

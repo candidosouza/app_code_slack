@@ -1714,6 +1714,21 @@ a:hover, a:focus, a:active {
   grid-template-areas: "BLG GN CI CI" "BLG CL CD UL";
   height: 100vh;
 }
+@media only screen and (min-width: 768px) {
+  .content {
+    grid-template-columns: 71px 100px auto 130px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .content {
+    grid-template-columns: 71px 150px auto 130px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .content {
+    grid-template-columns: 71px 240px auto 390px;
+  }
+}
 .content .bar-list-group {
   grid-area: BLG;
   display: flex;
@@ -2092,6 +2107,7 @@ a:hover, a:focus, a:active {
 }
 .content .user-list {
   grid-area: UL;
+  display: none;
   background-color: #2f3136;
   overflow-y: scroll;
 }
@@ -2104,6 +2120,11 @@ a:hover, a:focus, a:active {
 }
 .content .user-list::-webkit-scrollbar-track {
   background-color: #2f3136;
+}
+@media only screen and (min-width: 768px) {
+  .content .user-list {
+    display: inline;
+  }
 }
 .content .user-list .container-users {
   padding: 10px 15px 0 15px;
@@ -2503,4 +2524,106 @@ a:hover, a:focus, a:active {
 }
 #addgroupModal .modal-content .modal-body .form-group .form-control {
   width: 100%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  height: auto;
+  padding: 30px 15px 0 15px;
+  background-color: #202225;
+}
+@media only screen and (min-width: 1200px) {
+  .login {
+    padding-top: 100px;
+  }
+}
+.login .logo {
+  max-width: 138px;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 1200px) {
+  .login .logo {
+    margin-bottom: 40px;
+  }
+}
+.login .container-login {
+  padding: 15px;
+  background-color: #2f3136;
+}
+@media only screen and (min-width: 768px) {
+  .login .container-login {
+    width: 520px;
+    padding: 40px 80px;
+  }
+}
+.login .container-login h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login .container-login p {
+  font-size: 1em;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.login .container-login .form-login {
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .login .container-login .form-login .form-group {
+    margin-bottom: 30px;
+  }
+}
+.login .container-login .form-login .form-control {
+  height: 60px;
+  border-radius: 5px;
+  background-color: #40444b;
+  border-color: #40444b;
+  font-size: 1.2em;
+  color: #8a8c90;
+}
+.login .container-login .form-login .form-control::-moz-placeholder {
+  color: #8a8c90;
+}
+.login .container-login .form-login .form-control:-ms-input-placeholder {
+  color: #8a8c90;
+}
+.login .container-login .form-login .form-control::-ms-input-placeholder {
+  color: #8a8c90;
+}
+.login .container-login .form-login .form-control::placeholder {
+  color: #8a8c90;
+}
+.login .container-login .form-login .btn-code-slack {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #2f3136;
+  text-transform: uppercase;
+  background-color: #fcca50;
+  border-color: #fcca50;
+  margin-top: 20px;
+}
+.login .container-login .form-login .btn-code-slack:hover, .login .container-login .form-login .btn-code-slack:focus, .login .container-login .form-login .btn-code-slack:active {
+  background-color: #2f3136;
+  color: #fcca50;
+}
+.login .container-login .form-text {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #8a8c90;
+  margin-top: 20px;
+}
+.login .container-login .form-text a {
+  color: #ffcd01;
 }
