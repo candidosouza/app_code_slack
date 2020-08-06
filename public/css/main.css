@@ -1709,14 +1709,14 @@ a:hover, a:focus, a:active {
 
 .content {
   display: grid;
-  grid-template-columns: 71px 240px auto 390px;
+  grid-template-columns: 40px 0 auto 0;
   grid-template-rows: 46px auto;
   grid-template-areas: "BLG GN CI CI" "BLG CL CD UL";
   height: 100vh;
 }
 @media only screen and (min-width: 768px) {
   .content {
-    grid-template-columns: 71px 100px auto 130px;
+    grid-template-columns: 71px 130px auto 130px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1743,30 +1743,47 @@ a:hover, a:focus, a:active {
   display: none;
 }
 .content .bar-list-group .separator {
-  font-size: 0.95em;
+  font-size: 0.7em;
   font-weight: 400;
   color: #828386;
   text-align: center;
   margin: 5px 0 15px 0;
 }
+@media only screen and (min-width: 768px) {
+  .content .bar-list-group .separator {
+    font-size: 0.95em;
+  }
+}
 .content .bar-list-group .logo {
   margin-bottom: 20px;
-  width: 55px;
+  width: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .content .bar-list-group .logo {
+    width: 55px;
+  }
 }
 .content .bar-list-group .group {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 55px;
-  height: 55px;
+  width: 30px;
+  height: 30px;
   margin-bottom: 15px;
   border-radius: 50%;
   background-color: #36393f;
   position: relative;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 300;
   color: #828386;
+}
+@media only screen and (min-width: 768px) {
+  .content .bar-list-group .group {
+    width: 55px;
+    height: 55px;
+    font-size: 2em;
+  }
 }
 .content .bar-list-group .group:hover, .content .bar-list-group .group.active {
   border: 1px solid #828386;
@@ -1796,9 +1813,15 @@ a:hover, a:focus, a:active {
   color: #757f8b;
 }
 .content .bar-list-group .group .img-group {
-  width: 53px;
-  height: 53px;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
+}
+@media only screen and (min-width: 768px) {
+  .content .bar-list-group .group .img-group {
+    width: 53px;
+    height: 53px;
+  }
 }
 .content .bar-list-group .dropdown-menu {
   top: -60px !important;
@@ -1897,11 +1920,16 @@ a:hover, a:focus, a:active {
 }
 .content .channel-list {
   grid-area: CL;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 10px 10px 24px 10px;
   background-color: #2f3136;
   overflow-y: scroll;
+}
+@media only screen and (min-width: 768px) {
+  .content .channel-list {
+    display: flex;
+  }
 }
 .content .channel-list::-webkit-scrollbar {
   display: none;

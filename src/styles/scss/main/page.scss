@@ -7,7 +7,7 @@
   // UL = user list
   display: grid;
   // grid-template-columns: 71px 240px 1fr 390px;
-  grid-template-columns: 71px 240px auto 390px;
+  grid-template-columns: 40px 0 auto 0;
   grid-template-rows: 46px auto;
   grid-template-areas:
     "BLG GN CI CI"
@@ -15,7 +15,7 @@
   height: 100vh; //view height
 
   @include respond-to($_768) {
-    grid-template-columns: 71px 100px auto 130px;
+    grid-template-columns: 71px 130px auto 130px;
   }
 
   @include respond-to($_992) {
@@ -43,19 +43,23 @@
     }
 
     .separator {
-      font-size: 0.95em;
+      font-size: 0.7em;
       font-weight: 400;
       color: $senary;
       text-align: center;
       margin: 5px 0 15px 0;
+
+      @include respond-to($_768) {
+        font-size: 0.95em;
+      }
     }
 
     .logo {
       margin-bottom: 20px;
-      width: 55px;
+      width: 30px;
 
       @include respond-to($_768) {
-
+        width: 55px;
       }
     }
 
@@ -65,17 +69,23 @@
       justify-content: center;
       flex-shrink: 0;
 
-      width: 55px;
-      height: 55px;
+      width: 30px;
+      height: 30px;
       margin-bottom: 15px;
       border-radius: 50%;
 
       background-color: $primary;
       position: relative;
 
-      font-size: 2em;
+      font-size: 1em;
       font-weight: 300;
       color: $senary;
+
+      @include respond-to($_768) {
+        width: 55px;
+      height: 55px;
+      font-size: 2em;
+      }
 
       &:hover,
       &.active {
@@ -115,9 +125,14 @@
       }
 
       .img-group {
-        width: 53px;
-        height: 53px;
+        width: 33px;
+        height: 33px;
         border-radius: 50%;
+
+        @include respond-to($_768) {
+          width: 53px;
+        height: 53px;
+        }
       }
     }
 
@@ -242,7 +257,13 @@
   .channel-list {
     grid-area: CL;
 
-    display: flex;
+
+    display: none;
+
+    @include respond-to($_768) {
+      display: flex;
+    }
+
     flex-direction: column;
     padding: 10px 10px 24px 10px;
 
