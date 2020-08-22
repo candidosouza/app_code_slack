@@ -1,0 +1,185 @@
+// bootstrap componentes
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// forms
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/buttons";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+  }
+}
+
+
+$_240: 240px;
+$_576: 576px;
+$_768: 768px;
+$_992: 992px;
+$_1200: 1200px;
+$_1440: 1440px;
+$_1680: 1680px;
+
+@mixin respond-to($media, $type: min) {
+  @if $type == max {
+    $media: $media - 1px;
+  }
+
+  @media only screen and (#{$type}-width: $media) {
+    @content;
+  }
+}
+
+$primary: #36393f;
+$secondary: #2f3136;
+$tertiary: rgb(32, 34, 37);
+$quaternary: #292b2f;
+$quinary: #393d42;
+$senary: #828386;
+
+$full-cycle: #ffcd01;
+
+$white: #ffffff;
+$gray: #8a8c90;
+$input: rgb(64, 68, 75);
+
+$symbol: #74777a;
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  height: auto;
+  padding: 30px 15px 0 15px;
+  background-color: $tertiary;
+
+  @include respond-to($_1200) {
+    padding-top: 100px;
+  }
+
+  .logo {
+    max-width: 138px;
+    margin-bottom: 15px;
+
+    @include respond-to($_1200) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .container-login {
+    padding: 15px;
+    background-color: $secondary;
+
+    @include respond-to($_768) {
+      width: 520px;
+      padding: 40px 80px;
+    }
+
+    h1 {
+      font-size: 1.7em;
+      font-weight: 700;
+      color: $white;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1em;
+      font-weight: 400;
+      color: $white;
+      margin-bottom: 5px;
+    }
+
+    #kc-form-login {
+      width: 100%;
+
+      .form-group {
+        @include respond-to($_1200) {
+          margin-bottom: 30px;
+        }
+
+        .sr-only {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+
+        .sr-only-focusable:active, .sr-only-focusable:focus {
+          position: static;
+          width: auto;
+          height: auto;
+          overflow: visible;
+          clip: auto;
+          white-space: normal;
+        }
+      }
+
+      .form-control {
+        height: 60px;
+        border-radius: 5px;
+        background-color: $input;
+        border-color: $input;
+
+        font-size: 1.2em;
+        color: $gray;
+
+        &::placeholder {
+          color: $gray;
+        }
+      }
+
+      .btn-code-slack {
+        width: 100%;
+        height: 60px;
+        border-radius: 5px;
+
+        font-size: 1.5em;
+        font-weight: 600;
+        color: $secondary;
+        text-transform: uppercase;
+        background-color: #fcca50;
+        border-color: #fcca50;
+        margin-top: 20px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: $secondary;
+          color: #fcca50;
+        }
+      }
+    }
+
+    .form-text {
+      font-size: 1.1em;
+      font-weight: 400;
+      color: $gray;
+      margin-top: 20px;
+
+      a {
+        color: $full-cycle;
+      }
+    }
+  }
+}
